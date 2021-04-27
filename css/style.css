@@ -4,6 +4,9 @@ body{
     overflow-x: hidden;
     background-color: #161616;
 }
+h2,h3,h4,h5,h6{
+  font-family: 'Cormorant Garamond', serif;
+}
 h1{
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
@@ -52,6 +55,7 @@ header nav ul li a:hover{
   width: 100vw;
   height: 75vh;
   overflow: hidden;
+  background: black;
 }
 .slideshow .slider {
   width: 100vw;
@@ -67,6 +71,7 @@ header nav ul li a:hover{
   position: relative;
   overflow: hidden;
   border: none;
+  opacity: 0.6;
   
 }
 .slideshow .slider .item .text {
@@ -144,9 +149,11 @@ header nav ul li a:hover{
   font-size: 80px;
   width: 100vw;
   text-align: center;
-  color: #fff;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 500;
+  color: #e9e0bb;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bolder;
+  border-bottom: 1px solid #e9e0bb;
+  width: 20%;
   pointer-events: none;
   text-transform: uppercase;
   letter-spacing: 20px;
@@ -291,6 +298,7 @@ main{
 #categories .categories_row img{
   width: 100%;
   border-radius: 50%;
+  margin-bottom: 10%;
   transition: all 1s ;
 }
 #categories .categories_row img:hover{
