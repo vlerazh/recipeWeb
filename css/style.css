@@ -47,6 +47,37 @@ header nav ul li a{
 header nav ul li a:hover{
   color: #e9e0bb;
 }
+/* Outline In */
+.hvr-outline-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.hvr-outline-in:before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  border: #e9e0bb solid 1px;
+  top: -16px;
+  right: -16px;
+  bottom: -16px;
+  left: -16px;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+.hvr-outline-in:hover:before, .hvr-outline-in:focus:before, .hvr-outline-in:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  opacity: 1;
+}
 .slideshow {
   position: absolute;
   z-index: 1;
@@ -263,6 +294,7 @@ main{
 }
 .title_row h1{
     color: #e9e0bb;
+    text-transform: capitalize;
 }
 .title_row .icon{
   position: relative;
@@ -304,7 +336,35 @@ main{
 #categories .categories_row img:hover{
   transform: rotate(30deg);
 }
-
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #e9e0bb;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
 #daily_offer{
   background-image: url('../img/bg.png');
   background-repeat: no-repeat;
@@ -380,4 +440,56 @@ main{
 #daily_offer .offer_row .list .box .text p{
   font-size: 15px;
   color: #b7b095;
+}
+
+#reviews .image_col img{
+  width: 100%;
+}
+#reviews .review_col{
+  padding: 5% 0;
+}
+
+#reviews .review_col .carousel{
+  margin-top: 10%;
+}
+#reviews .review_col .carousel .carousel-inner{
+  width: 50% !important;
+  margin: auto;
+}
+#reviews .review_col .carousel .carousel-indicators{
+  position: unset !important;
+  margin-top: 5%;
+}
+#reviews .review_col .carousel .carousel-inner .carousel-item img{
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+#reviews .review_col .carousel .carousel-inner .carousel-item .italic{
+  font-style: italic;
+  font-family: 'Cormorant';
+  text-transform: capitalize;
+}
+#reviews .review_col .carousel .carousel-indicators [data-bs-target]{
+  background-color: #e9e0bb;
+}
+#receipes{
+  padding: 3% 0;
+}
+#receipes .recipe_row .card{
+  background-color: transparent;
+  border: 1px solid #e9e0bb;
+  padding: 10px;
+  border-radius: 0;
+}
+#receipes .recipe_row .card img{
+  width: 100%;
+}
+#receipes .recipe_row .card .card-title{
+  color: #e9e0bb;
+  text-align: center;
+  font-size: 35px;
+}
+#receipes .recipe_row .card .card-text{
+  color: #B7B095;
+  font-size: 20px;
 }
