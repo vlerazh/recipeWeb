@@ -587,3 +587,108 @@ footer form button{
   float: right;
   margin-right: 10px;
 }
+
+/*about page*/
+header#about_header{
+  height: auto;
+}
+header .banner {
+  position: relative;
+}
+header .banner h1{
+  position: absolute;
+  color: #e9e0bb;
+  text-transform: uppercase;
+  font-size: 100px;
+  top: 40%;
+  right: 15%;
+}
+header .banner h1 .line{
+  height: 1px;
+  background-color: #e9e0bb;
+}
+main #about_us .info_row{
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+main #about_us .info_row img{
+  width: 100%;
+}
+main #about_us .info_row h1{
+  text-align: right;
+  color: #e9e0bb;
+  width: 80%;
+  margin-left: auto;
+  margin-top:10%;
+}
+main #about_us .info_row p{
+  color: #B7B095;
+  text-align: right;
+  width: 90%;
+  margin-left: auto;
+  margin-top: 5%;
+}
+
+main #counter{
+  background-image: url('../img/bg3.png');
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.counter-section .counter_box{
+  border: 1px solid #e9e0bb;
+  margin: 10px;
+  padding: 10%;
+  height: 200px;
+}
+.counter-section i {
+  display: block;
+  margin: 0 0 10px
+}
+
+.counter-section span.counter {
+  font-size: 40px;
+  color: #e9e0bb;
+  line-height: 60px;
+  display: block;
+  font-family: 'Barlow',sans-serif;
+  letter-spacing: 2px
+}
+
+.counter-title {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Barlow',sans-serif;
+  color: #B7B095;
+}
+
+.counter-icon {
+  top: 25px;
+  position: relative
+}
+
+.counter-style2 .counter-title {
+  letter-spacing: 0.55px;
+  float: left;
+}
+
+.counter-style2 span.counter {
+  letter-spacing: 0.55px;
+  float: left;
+  margin-right: 10px
+}
+
+.counter-style2 i {
+  float: right;
+  line-height: 26px;
+  margin: 0 10px 0 0
+}
+
+.counter-subheadline span {
+  float: right
+}
+
+.medium-icon {
+  font-size: 40px !important;
+  margin-bottom: 15px !important
+}
