@@ -634,17 +634,19 @@ main #counter{
   background-repeat: no-repeat;
   height: 600px;
 }
+main #counter .container,.row{
+  height: 100%;
+}
+main #counter .material-icons{
+  color: #b7b095;
+  font-size: 50px;
+}
 .counter-section .counter_box{
   border: 1px solid #e9e0bb;
   margin: 10px;
   padding: 10%;
   height: 200px;
 }
-.counter-section i {
-  display: block;
-  margin: 0 0 10px
-}
-
 .counter-section span.counter {
   font-size: 40px;
   color: #e9e0bb;
@@ -662,33 +664,43 @@ main #counter{
   color: #B7B095;
 }
 
-.counter-icon {
-  top: 25px;
-  position: relative
-}
-
-.counter-style2 .counter-title {
-  letter-spacing: 0.55px;
-  float: left;
-}
-
-.counter-style2 span.counter {
-  letter-spacing: 0.55px;
-  float: left;
-  margin-right: 10px
-}
-
-.counter-style2 i {
-  float: right;
-  line-height: 26px;
-  margin: 0 10px 0 0
-}
-
 .counter-subheadline span {
   float: right
 }
-
-.medium-icon {
-  font-size: 40px !important;
-  margin-bottom: 15px !important
+main #team{
+  padding: 3% 0;
+}
+main #team .chef_row .chefs{
+  position: relative;
+  margin-top: 5%;
+}
+main #team .chef_row .chefs img{
+  width: 100%;
+  transition: all 0.3s ease;
+}
+main #team .chef_row .chefs .onhover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 5% 10%;
+  background-color: rgb(183, 176, 149,0.5);
+  height: auto;
+  color: #161616;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  visibility: hidden;
+  text-align: center;
+}
+main #team .chef_row .chefs .onhover h3{
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 30%;
+}
+main #team .chef_row .chefs:hover > img{
+  filter: blur(5px);
+}
+main #team .chef_row .chefs:hover > .onhover{
+  visibility: visible;
 }
