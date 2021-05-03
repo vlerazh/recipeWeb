@@ -395,49 +395,49 @@ main{
   right: -5px;
   bottom: 5px;
 }
-#daily_offer .offer_row .list:not(:last-child){
+.offer_row .list:not(:last-child){
   margin-bottom: 30px;
 }
-#daily_offer .offer_row .list .box .combo{
+.offer_row .list .box .combo{
   display: flex;
 }
-#daily_offer .offer_row .list .box .img {
+.offer_row .list .box .img {
   width: 80px;
   position: relative;
   z-index: 2;
 }
-#daily_offer .offer_row .list .box .img img{
+.offer_row .list .box .img img{
   width: 100%;
   border-radius: 50%;
 }
-#daily_offer .offer_row .list .box .text {
+.offer_row .list .box .text {
   padding-left: 30px;
     width: 100%;
 }
-#daily_offer .offer_row .list .box .text h6{
+.offer_row .list .box .text h6{
   font-family: 'Cormorant Garamond', serif;
   color: #e9e0bb;
   white-space: nowrap;
   padding-right: 10px ;
   font-size: 20px;
 }
-#daily_offer .offer_row .list .box .flex h6, #daily_offer .offer_row .list .box .flex .dot-line, #daily_offer .offer_row .list .box .flex .price {
+.offer_row .list .box .flex h6, .offer_row .list .box .flex .dot-line, .offer_row .list .box .flex .price {
   display: table-cell;
 }
-#daily_offer .offer_row .list .box .flex .dot-line{
+.offer_row .list .box .flex .dot-line{
   width: 100%;
 }
-#daily_offer .offer_row .list .box .flex .dot-line .dots{
+.offer_row .list .box .flex .dot-line .dots{
     height: 4px;
     width: 100%;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
 }
-#daily_offer .offer_row .list .box .flex .price {
+.offer_row .list .box .flex .price {
   padding-left: 20px;
     white-space: nowrap;
     color: #e9e0bb;
 }
-#daily_offer .offer_row .list .box .text p{
+.offer_row .list .box .text p{
   font-size: 15px;
   color: #b7b095;
 }
@@ -508,6 +508,22 @@ main{
 footer {
   padding: 3% 0;
   border-top: 1px solid #b7b095;
+}
+footer p {
+  color: #b7b095;
+  width: 70%;
+}
+footer  h2, .pages a{
+  color: #B7B095;
+  text-decoration: none;
+  display: block;
+}
+footer .semi-col{
+  margin-top: 4.5%;
+}
+footer .pages a{
+  font-size: 20px;
+  text-align: left;
 }
 footer .line{
   height: 1px;
@@ -676,7 +692,7 @@ main #team .chef_row .chefs{
 }
 main #team .chef_row .chefs img{
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all  ease;
 }
 main #team .chef_row .chefs .onhover{
   position: absolute;
@@ -703,4 +719,116 @@ main #team .chef_row .chefs:hover > img{
 }
 main #team .chef_row .chefs:hover > .onhover{
   visibility: visible;
+}
+
+/*menu page*/
+.menu_row{
+  margin: 5% 0;
+}
+.nav-tabs{
+  border: none;
+  justify-content: center;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: #b7b095;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  border-bottom: 1px solid #b7b095;
+}
+.nav-tabs .nav-link{
+  font-family: 'Barlow',sans-serif;
+  color: #b7b095;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tab-content{
+  margin-top: 5%;
+}
+
+/*contact*/
+#contact .contact_row{
+  margin: 5% 0;
+}
+#contact .contact_row h3{
+  font-size: 30px;
+  color: #e9e0bb;
+}
+#contact .contact_row a,p{
+  font-size: 20px;
+  color: #e9e0bb;
+  text-decoration: none;
+  display: block;
+}
+#contact .contact_row .line{
+  height: 1px;
+  background-color: #e9e0bb;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.map_form{
+  position: relative;
+  height: 700px;
+}
+.form{
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50%;
+  padding: 3%;
+  border-radius: 15px;
+  background-color: #161616;
+  border: 1px solid #B7B095;
+}
+.form h3{
+  color: #e9e0bb;
+  text-align: center;
+  font-size: 30px;
+}
+.form form{
+  padding-top: 5%;
+}
+.form form .input-group{
+  margin: 30px 0;
+}
+.form form .input-group input{
+  background-color: transparent;
+  border: 1px solid #b7b095;
+  margin: 0 10px;
+  height: 50px;
+  color: #e9e0bb;
+}
+.form form .input-group input:focus{
+  background-color: transparent;
+  box-shadow: none;
+  border-color: #b7b095;
+  color: #e9e0bb;
+}
+.form form .input-group input::placeholder{
+  color: #b7b095;
+  text-transform: capitalize;
+  font-family: 'Barlow', sans-serif;
+}
+
+.form form input[type="submit"]{
+  background-color: #b7b095;
+  border-radius: 0;
+  width: 100px;
+  margin: 5px 0;
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+}
+.form form button{
+  background-color: transparent;
+  border: 1px solid #b7b095;
+  float: right;
+  margin-right: 10px;
 }
