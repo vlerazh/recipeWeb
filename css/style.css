@@ -30,6 +30,9 @@ button:focus{
 header{
     height: 90vh;
 }
+header nav{
+  background-color: #161616;
+}
 header nav ul{
   margin-left: auto;
 }
@@ -46,6 +49,44 @@ header nav ul li a{
 }
 header nav ul li a:hover{
   color: #e9e0bb;
+}
+header nav .navbar-toggler .toggler-icon{
+  width: 30px;
+  height: 1px;
+  background-color: #b7b095;
+  margin: 5px;
+  transition: all .2s ease;
+}
+header nav .navbar-toggler .toggler-icon:nth-child(2){
+  width: 25px;
+  margin-left: auto;
+}
+
+header nav .navbar-toggler[aria-expanded="true"] .toggler-icon:first-child{
+  width: 30px;
+  transform: rotate(45deg) translate(5px, 0);
+
+}
+header nav .navbar-toggler[aria-expanded="true"] .toggler-icon:nth-child(2){
+ display: none;
+}
+header nav .navbar-toggler[aria-expanded="true"] .toggler-icon:nth-child(3){
+  transform: rotate(-45deg) translate(4px, 0px);
+}
+.nav-overlay{
+  position: fixed;
+  width: 100%;
+  top: 108px;
+  left: 0;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav-overlay.show{
+  opacity: 1;
+  visibility: visible;
 }
 /* Outline In */
 .hvr-outline-in {
@@ -605,7 +646,7 @@ footer form button{
 }
 
 /*about page*/
-header#about_header{
+header#about_header, header#menu_header, header#contact_header{
   height: auto;
 }
 header .banner {

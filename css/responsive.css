@@ -1,0 +1,130 @@
+@media(max-width:1200px){
+    .slideshow .slick-dots{
+        top: 25%;
+    }
+    footer h2{
+        font-size: 26px;
+    }
+    footer .line{
+        width: 100%;
+    }
+    footer .semi-col{
+        margin-top: 6.5%;
+    }
+    footer p{
+        width: 100%;
+    }
+}
+@media(max-width:1024px){
+
+}
+@media(max-width:992px){
+    header nav ul{
+        position: fixed;
+        right: 0;
+        background-color: #161616;
+        width: 300px;
+        height: 100vh;
+        align-items: center;
+        padding-top: 15%;
+        z-index: 5;
+    }
+
+    main #about .row{
+        flex-direction: column-reverse;
+    }
+    #about .text_col{
+        text-align: center;
+        margin: 0 0 10% 0;
+    }
+    main #about .row .img_col{
+        margin:  0 auto;
+    }
+    main #categories .categories_row div{
+        margin-bottom: 3%;
+    }
+    main #categories .categories_row h2{
+        font-size: 25px;
+    }
+
+    main #reviews .image_col{
+        display: none;
+    }
+    footer .social{
+        margin-left: 65%;
+    }
+    footer .semi-col{
+        text-align: center;
+    }
+    footer .semi-col .pages a{
+        text-align: center;
+    }
+}
+@media(max-width:768px){
+    main #categories .categories_row div{
+        margin: 3% auto;
+    }
+    #reviews .review_col .carousel .carousel-inner{
+        width: 80% !important;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width: 5%;
+    }
+    main #receipes .recipe_row div{
+        margin:  0 auto;
+    }
+}
+@media(max-width:576px){
+    h1{
+        font-size: 35px;
+    }
+    #daily_offer .offer_row .box-bord{
+        padding: 50px 35px;
+    }
+    #contact .contact_row a, p{
+        font-size: 18px;
+    }
+    footer .social{
+        margin-left:50% ;
+    }
+}
+@media(max-width:480px){
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 17px;
+    }
+    #daily_offer .offer_row .box-bord{
+        padding: 35px 25px;
+    }
+    #reviews .review_col .carousel .carousel-inner .carousel-item img{
+        width: 70px;
+    }
+    #receipes .recipe_row .card .card-text{
+        font-size: 17px;
+    }
+    footer .social{
+        margin-left: 30%;
+    }
+}
+@media (max-width:350px){
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 16px;
+    }
+    #daily_offer .offer_row .box-bord{
+        padding: 30px 10px;
+    }
+    .offer_row .list .box .img{
+        width: 90px;
+    }
+    .offer_row .list .box .text{
+        padding-left: 15px;
+    }
+    footer .social{
+        margin-left: 10%;
+    }
+}
