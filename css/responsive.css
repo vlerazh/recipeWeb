@@ -14,6 +14,19 @@
     footer p{
         width: 100%;
     }
+    /*about page*/
+    header .banner h1{
+        right: 5%;
+        top: 25%;
+        font-size: 90px;
+    }
+    main #about_us .info_row h1{
+        width: 100%;
+        margin-top: 0;
+    }
+    main #about_us .info_row p{
+        width: 100%;
+    }
 }
 @media(max-width:1024px){
 
@@ -59,6 +72,19 @@
     footer .semi-col .pages a{
         text-align: center;
     }
+    /*about page*/
+    header .banner h1{
+        font-size: 80px;
+    }
+    main #about_us .info_row img{
+        display: none;
+    }
+    main #about_us .info_row h1{
+        text-align: center;
+    }
+    main #about_us .info_row p{
+        text-align: justify;
+    }
 }
 @media(max-width:768px){
     main #categories .categories_row div{
@@ -72,6 +98,13 @@
     }
     main #receipes .recipe_row div{
         margin:  0 auto;
+    }
+    /*about page*/
+    header .banner h1{
+        font-size: 70px;
+    }
+    main #team .chef_row div {
+        margin: 0 auto;
     }
 }
 @media(max-width:576px){
@@ -87,8 +120,24 @@
     footer .social{
         margin-left:50% ;
     }
+    /*about page*/
+    header .banner h1{
+        font-size: 55px;
+    }
+    main #counter{
+        height: 895px;
+    }
+    main #counter .row div{
+        margin: auto;
+    }
 }
 @media(max-width:480px){
+    header .banner{
+        margin-top: 80px;
+    }
+    .navbar-brand img{
+        width: 60px;
+    }
     h1{
         font-size: 30px;
     }
@@ -106,6 +155,10 @@
     }
     footer .social{
         margin-left: 30%;
+    }
+    /*about page*/
+    header .banner h1{
+        font-size: 45px;
     }
 }
 @media (max-width:350px){
@@ -126,5 +179,10 @@
     }
     footer .social{
         margin-left: 10%;
+    }
+    /*about page*/
+    main #about_us .info_row p
+    {
+        line-height: 22px;
     }
 }

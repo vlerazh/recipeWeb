@@ -651,6 +651,10 @@ header#about_header, header#menu_header, header#contact_header{
 }
 header .banner {
   position: relative;
+  margin-top: 108px;
+}
+header .banner img{
+  width: 100%;
 }
 header .banner h1{
   position: absolute;
@@ -689,6 +693,7 @@ main #about_us .info_row p{
 main #counter{
   background-image: url('../img/bg3.png');
   background-repeat: no-repeat;
+  background-size: cover;
   height: 600px;
 }
 main #counter .container,.row{
@@ -791,7 +796,9 @@ main #team .chef_row .chefs:hover > .onhover{
 .tab-content{
   margin-top: 5%;
 }
-
+main #tabs .offer_row div.box-bord:first-child{
+  margin-bottom: 30px;
+}
 /*contact*/
 #contact .contact_row{
   margin: 5% 0;
