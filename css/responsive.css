@@ -99,6 +99,10 @@
     main #about_us .info_row p{
         text-align: justify;
     }
+    /*contact page*/
+    main #contact .contact_row div{
+        margin: 2% 0;
+    } 
 }
 @media(max-width:768px){
     /* .slick-list{
@@ -133,6 +137,10 @@
     main #team .chef_row div {
         margin: 0 auto;
     }
+    /*contact form*/
+    .form{
+        width: 75%;
+    }
 }
 @media(max-width:576px){
     header {
@@ -165,6 +173,10 @@
     }
     main #counter .row div{
         margin: auto;
+    }
+    /*contact form*/
+    .form{
+        width: 85%;
     }
 }
 @media(max-width:480px){
@@ -224,5 +236,9 @@
     main #about_us .info_row p
     {
         line-height: 22px;
+    }
+        /*contact form*/
+    .form{
+        width: 95%;
     }
 }

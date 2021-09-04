@@ -24,6 +24,9 @@ button:focus{
 .slick-prev:before,.slick-next::before{
   content: "";
 }
+.mapouter, .gmap_canvas{
+  width: 100% !important;
+}
 ::-webkit-scrollbar {
     width: 3px;
 }
